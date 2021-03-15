@@ -8,6 +8,7 @@ const main = async () => {
     dbName: 'reddit',
     type: 'postgresql',
     debug: !__prod__
+    
   })
 
   const post = orm.em.create(Post, {title: 'the first post'})
